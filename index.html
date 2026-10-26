@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Little Club (TLC) – Kids Concierge &amp; Childcare, Raipur</title>
+<meta name="description" content="TLC is a booking-based kids concierge in Raipur. Enjoy cafés, restaurants, lounges and events while trained, verified caregivers look after your children.">
+<meta name="theme-color" content="#f3eadf">
+<meta property="og:title" content="The Little Club (TLC) – Happy kids. Happier parents.">
+<meta property="og:description" content="Booking-based kids concierge and childcare at partner cafés, restaurants, lounges and events in Raipur.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232b1d16'/%3E%3Cpath d='M32 47C18 37 14 30 14 24c0-5 4-9 9-9 4 0 7 2 9 5 2-3 5-5 9-5 5 0 9 4 9 9 0 6-4 13-18 23z' fill='%23f3eadf'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=Instrument+Sans:wght@400;500;600&display=swap">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --cream:#f3eadf; --paper:#faf5ee; --sand:#e8d9c7; --blush:#ebcfc2; --sage:#9aa384;
+  --espresso:#2b1d16; --espresso-2:#1f1510; --ink:#2b1d16; --muted:#6c5a4e;
+  --caramel:#9a532e; --caramel-lt:#e09a6b; --line:rgba(43,29,22,.16); --line-lt:rgba(243,234,223,.2);
+  --display:'Bodoni Moda','Didot','Playfair Display',Georgia,serif;
+  --body:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --ease:cubic-bezier(.22,.8,.24,1);
+  --z-grain:60; --z-nav:50; --z-menu:49;
+  --gutter:clamp(18px,4vw,56px);
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:var(--z-grain);pointer-events:none;opacity:.14;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .17  0 0 0 0 .11  0 0 0 0 .08  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+img,video,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--caramel);outline-offset:3px;border-radius:6px}
+.dark :focus-visible{outline-color:var(--caramel-lt)}
+.skip{position:absolute;left:12px;top:-60px;background:var(--espresso);color:var(--cream);padding:10px 16px;border-radius:10px;z-index:100;text-decoration:none;transition:top .2s}
+.skip:focus{top:12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* type */
+.d{font-family:var(--display);font-weight:450;letter-spacing:-.02em;line-height:.96;font-optical-sizing:auto;text-wrap:balance}
+.hy{font-family:var(--body);font-style:normal;font-weight:400;margin-inline:.04em}
+.d em{font-style:italic;font-weight:400;color:var(--caramel)}
+.dark .d em{color:var(--caramel-lt)}
+.h2{font-size:clamp(2.5rem,6vw,5.4rem)}
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:.74rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--caramel);margin-bottom:26px}
+.eyebrow::before{content:"";width:34px;height:1px;background:currentColor}
+.dark .eyebrow{color:var(--caramel-lt)}
+.lede{font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--muted);max-width:52ch;text-wrap:pretty}
+.dark .lede{color:rgba(243,234,223,.72)}
+.wrap{width:100%;max-width:1360px;margin-inline:auto;padding-inline:var(--gutter)}
+section{position:relative}
+.pad{padding-block:clamp(88px,12vw,176px)}
+
+/* buttons */
+.btn{--bg:var(--espresso);--fg:var(--cream);display:inline-flex;align-items:center;gap:14px;background:var(--bg);color:var(--fg);padding:8px 8px 8px 26px;border-radius:16px;font-weight:500;font-size:.96rem;text-decoration:none;border:0;cursor:pointer;transition:transform .35s var(--ease),background .3s,color .3s,box-shadow .35s;box-shadow:0 14px 30px -14px rgba(43,29,22,.55)}
+.btn .ar{width:42px;height:42px;border-radius:11px;background:var(--cream);color:var(--espresso);display:grid;place-items:center;transition:transform .4s var(--ease),background .3s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 22px 36px -16px rgba(43,29,22,.6)}
+.btn:hover .ar{transform:rotate(45deg)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn.sm{padding:5px 5px 5px 18px;font-size:.88rem;border-radius:13px;gap:10px}
+.btn.sm .ar{width:32px;height:32px;border-radius:9px}
+.btn.alt{--bg:var(--caramel);--fg:#fff}
+.link{display:inline-flex;align-items:center;gap:10px;font-weight:500;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px;transition:gap .3s var(--ease),color .3s}
+.link:hover{gap:16px;color:var(--caramel)}
+.dark .link:hover{color:var(--caramel-lt)}
+
+/* header */
+header.top{position:fixed;z-index:var(--z-nav);top:max(14px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);width:min(1180px,calc(100% - 24px))}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:9px 10px 9px 22px;border-radius:20px;background:rgba(250,245,238,.72);-webkit-backdrop-filter:blur(18px) saturate(1.3);backdrop-filter:blur(18px) saturate(1.3);box-shadow:inset 0 0 0 1px rgba(255,255,255,.6),0 18px 40px -22px rgba(43,29,22,.45);transition:background .3s}
+.mark{display:flex;align-items:center;gap:9px;text-decoration:none;font-family:var(--display);font-size:1.28rem;font-weight:500;letter-spacing:-.01em;white-space:nowrap}
+.mark svg{width:16px;height:16px;color:var(--caramel)}
+.links{display:flex;gap:6px;align-items:center}
+.links a:not(.btn){text-decoration:none;font-size:.9rem;font-weight:500;color:var(--muted);padding:9px 14px;border-radius:12px;transition:background .25s,color .25s}
+.links a:not(.btn):hover{background:rgba(43,29,22,.06);color:var(--ink)}
+.links a[aria-current="true"]{color:var(--ink);background:rgba(43,29,22,.08)}
+.menu{display:none;width:44px;height:44px;border-radius:13px;border:0;background:rgba(43,29,22,.07);cursor:pointer;place-items:center}
+.menu i{display:block;width:18px;height:1.5px;background:var(--ink);position:relative;transition:transform .3s var(--ease),background .2s}
+.menu i::before,.menu i::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--ink);transition:transform .3s var(--ease)}
+.menu i::before{top:-6px}.menu i::after{top:6px}
+.menu[aria-expanded="true"] i{background:transparent}
+.menu[aria-expanded="true"] i::before{transform:translateY(6px) rotate(45deg)}
+.menu[aria-expanded="true"] i::after{transform:translateY(-6px) rotate(-45deg)}
+@media(max-width:860px){
+  .menu{display:grid}
+  .links{position:absolute;top:calc(100% + 8px);left:0;right:0;flex-direction:column;align-items:stretch;padding:12px;border-radius:20px;background:rgba(250,245,238,.96);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);box-shadow:0 24px 50px -20px rgba(43,29,22,.5);opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .25s,transform .3s var(--ease),visibility .25s;z-index:var(--z-menu)}
+  .links.open{opacity:1;visibility:visible;transform:none}
+  .links a:not(.btn){padding:14px 16px;font-size:1rem}
+  .links .btn{justify-content:space-between;margin-top:6px;padding-left:20px}
+  .bar{padding-left:18px}
+}
+
+/* hero */
+.hero{min-height:100dvh;padding:clamp(120px,14vh,170px) 0 clamp(56px,8vw,96px);background:
+  radial-gradient(60% 55% at 88% 12%,rgba(235,207,194,.85),transparent 70%),
+  radial-gradient(45% 45% at 0% 100%,rgba(154,163,132,.28),transparent 70%),var(--cream);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:clamp(24px,4vw,72px);align-items:center}
+.hero h1{font-size:clamp(3.1rem,6.5vw,6.8rem);margin-bottom:clamp(26px,3.4vw,44px);position:relative;z-index:3}
+.hero h1 .l2{display:block;margin-right:-24%}
+.hero .lede{margin-bottom:34px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center}
+.facts{display:flex;flex-wrap:wrap;gap:0;margin-top:clamp(36px,5vw,64px);border-top:1px solid var(--line)}
+.facts li{padding:16px 28px 0 0;margin-right:28px;font-size:.84rem;color:var(--muted);line-height:1.35}
+.facts li+li{border-left:1px solid var(--line);padding-left:28px}
+.facts b{display:block;font-family:var(--display);font-weight:500;font-size:1.5rem;color:var(--ink);letter-spacing:-.01em;line-height:1.1;margin-bottom:3px}
+.stack{position:relative;justify-self:end;width:min(100%,500px);padding-bottom:70px}
+.arch{position:relative;border-radius:999px 999px 30px 30px;overflow:hidden;aspect-ratio:3/4.35;background:var(--sand);box-shadow:0 50px 80px -40px rgba(43,29,22,.7)}
+.arch video,.arch img{width:100%;height:100%;object-fit:cover}
+.arch::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);pointer-events:none}
+.mini{position:absolute;left:-14%;bottom:0;width:44%;aspect-ratio:3/4;border-radius:24px;overflow:hidden;border:6px solid var(--cream);box-shadow:0 30px 50px -24px rgba(43,29,22,.7);will-change:transform}
+.mini video{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;right:-6%;top:12%;width:clamp(104px,13vw,148px);aspect-ratio:1;border-radius:50%;background:var(--espresso);color:var(--cream);display:grid;place-items:center;box-shadow:0 20px 36px -16px rgba(43,29,22,.7)}
+.badge svg{width:100%;height:100%;animation:spin 26s linear infinite}
+.badge text{font:600 11.6px var(--body);letter-spacing:.2em;fill:var(--cream);text-transform:uppercase}
+.badge .h{position:absolute;width:26%;color:var(--caramel-lt)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:560px){
+  .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0 12px}
+  .facts li,.facts li+li{margin:0;padding:14px 0 0;border-left:0}
+  .facts b{font-size:1.08rem}
+}
+@media(max-width:940px){
+  .hero{min-height:0;padding-top:116px}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero h1 .l2{margin-right:0}
+  .stack{justify-self:center;width:min(86%,440px);margin-top:12px}
+  .mini{left:-8%}
+}
+
+/* marquee */
+.marquee{background:var(--espresso);color:var(--cream);overflow:hidden;padding:20px 0;border-block:1px solid #000}
+.marquee .track{display:flex;width:max-content;animation:slide 38s linear infinite}
+.marquee span{display:flex;align-items:center;gap:34px;padding-right:34px;font-family:var(--display);font-style:italic;font-size:clamp(1.4rem,2.6vw,2.2rem);white-space:nowrap}
+.marquee svg{width:.8em;height:.8em;color:var(--caramel-lt);flex:none}
+@keyframes slide{to{transform:translateX(-50%)}}
+.marquee:hover .track{animation-play-state:paused}
+
+/* about */
+.about{background:var(--paper)}
+.about .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(36px,7vw,120px);align-items:start}
+.about .fig{position:relative;margin-top:44px}
+.about .fig .arch{aspect-ratio:3/4;border-radius:999px 999px 28px 28px}
+.about .fig figcaption{position:absolute;right:-16px;bottom:34px;transform:rotate(-4deg);background:var(--blush);color:var(--espresso);font-family:var(--display);font-style:italic;font-size:1.25rem;padding:12px 20px;border-radius:14px;box-shadow:0 16px 30px -16px rgba(43,29,22,.5)}
+.about h2{margin-bottom:28px}
+.pillars{margin-top:clamp(44px,6vw,80px);display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(24px,4vw,56px)}
+.pillars li{padding:26px 0 30px;border-top:1px solid var(--line)}
+.pillars li:first-child{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr;gap:6px 26px}
+.pillars .n{font-family:var(--display);font-style:italic;font-size:1.1rem;color:var(--caramel);margin-bottom:12px;display:block}
+.pillars li:first-child .n{grid-row:span 2;font-size:3.4rem;line-height:1;margin:0}
+.pillars h3{font-family:var(--display);font-weight:500;font-size:1.6rem;letter-spacing:-.01em;line-height:1.15;margin-bottom:8px}
+.pillars p{color:var(--muted);font-size:.98rem;max-width:40ch}
+@media(max-width:900px){.about .wrap{grid-template-columns:1fr}.about .fig{max-width:380px;margin:0 0 8px}.pillars{grid-template-columns:1fr}}
+
+/* services */
+.services{background:var(--sand)}
+.services .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:clamp(36px,7vw,120px)}
+.sticky{position:sticky;top:120px;align-self:start}
+.svc li{display:grid;grid-template-columns:72px 1fr;gap:6px 18px;padding:34px 0;border-top:1px solid var(--line);position:relative;transition:padding .45s var(--ease)}
+.svc li:last-child{border-bottom:1px solid var(--line)}
+.svc li::before{content:"";position:absolute;left:-18px;top:0;bottom:0;width:3px;background:var(--caramel);transform:scaleY(0);transform-origin:top;transition:transform .45s var(--ease)}
+.svc li:hover{padding-left:12px}
+.svc li:hover::before{transform:scaleY(1)}
+.svc .n{font-family:var(--display);font-style:italic;font-size:1.5rem;color:var(--caramel);padding-top:6px}
+.svc h3{font-family:var(--display);font-weight:500;font-size:clamp(1.7rem,2.8vw,2.5rem);letter-spacing:-.015em;line-height:1.08;margin-bottom:10px}
+.svc p{color:var(--muted);max-width:46ch}
+.occasions{margin-top:44px;display:flex;flex-wrap:wrap;gap:10px}
+.occasions li{font-size:.86rem;font-weight:500;padding:9px 16px;border-radius:12px;background:rgba(250,245,238,.6);box-shadow:inset 0 0 0 1px rgba(43,29,22,.12);transition:background .25s,transform .35s var(--ease)}
+.occasions li:hover{background:var(--paper);transform:translateY(-2px)}
+.occasions li:nth-child(3n+2){border-radius:999px}
+.occasions li:nth-child(3n){border-radius:4px 14px 4px 14px}
+@media(max-width:900px){.services .wrap{grid-template-columns:1fr}.sticky{position:static}.svc li{grid-template-columns:48px 1fr}.svc li::before{left:-10px}}
+
+/* moments */
+.dark{background:var(--espresso);color:var(--cream)}
+.moments{overflow:hidden}
+.moments .head{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap;margin-bottom:clamp(44px,6vw,84px)}
+.moments h2{font-size:clamp(3rem,9vw,8.4rem);text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-weight:400}
+.moments h2 em{text-transform:none;font-size:.86em;letter-spacing:-.02em}
+.moments .lede{max-width:34ch}
+.rail{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,2vw,28px);align-items:start}
+.rail figure:nth-child(even){margin-top:clamp(40px,7vw,110px)}
+.rail .arch{border-radius:200px 200px 22px 22px;aspect-ratio:3/4.5;box-shadow:0 36px 60px -34px #000}
+.rail figcaption{display:flex;gap:14px;align-items:baseline;padding:18px 4px 0;font-size:.92rem;color:rgba(243,234,223,.75);line-height:1.4}
+.rail figcaption b{font-family:var(--display);font-style:italic;font-weight:400;color:var(--caramel-lt);font-size:1.2rem}
+@media(max-width:1000px){
+  .rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin-inline:calc(var(--gutter) * -1);padding:0 var(--gutter) 20px;scrollbar-width:none}
+  .rail::-webkit-scrollbar{display:none}
+  .rail figure{flex:0 0 min(70vw,300px);scroll-snap-align:center}
+  .rail figure:nth-child(even){margin-top:0}
+}
+
+/* process */
+.process{background:var(--paper)}
+.process .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.25fr);gap:clamp(36px,7vw,120px)}
+.steps li{display:grid;grid-template-columns:clamp(70px,9vw,120px) 1fr;gap:4px 18px;padding:30px 0;border-top:1px solid var(--line);align-items:start}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps .n{font-family:var(--display);font-size:clamp(3.6rem,7vw,6rem);line-height:.9;color:transparent;-webkit-text-stroke:1px var(--caramel);transition:color .6s var(--ease)}
+.steps li.in .n{color:var(--caramel)}
+.steps h3{font-family:var(--display);font-weight:500;font-size:clamp(1.5rem,2.4vw,2.1rem);letter-spacing:-.01em;line-height:1.1;margin:10px 0 8px}
+.steps p{color:var(--muted);max-width:46ch}
+.pilot{margin-top:40px;padding:26px 28px;border-radius:24px 24px 24px 6px;background:var(--blush);max-width:440px}
+.pilot b{font-family:var(--display);font-size:1.45rem;font-weight:500;display:block;margin-bottom:6px;letter-spacing:-.01em}
+.pilot p{font-size:.95rem;color:#4d3a2f}
+@media(max-width:900px){.process .wrap{grid-template-columns:1fr}}
+
+/* safety (image panel) */
+.safety{padding:0 var(--gutter) clamp(72px,9vw,140px);background:var(--paper)}
+.panel{max-width:1360px;margin-inline:auto;display:grid;grid-template-columns:minmax(200px,.34fr) 1fr;min-height:min(86vh,760px);border-radius:32px;overflow:hidden;background:var(--cream);box-shadow:0 60px 90px -50px rgba(43,29,22,.7)}
+.panel .side{display:flex;flex-direction:column;justify-content:space-between;padding:clamp(24px,3vw,44px);gap:36px}
+.panel .side p{font-size:.92rem;color:var(--muted);max-width:26ch}
+.panel .side .tag{font-family:var(--display);font-size:1.6rem;line-height:1.15;letter-spacing:-.01em;text-transform:uppercase}
+.panel .side .yr{font-size:.8rem;letter-spacing:.2em;color:var(--muted)}
+.panel .vis{position:relative;overflow:hidden;color:var(--cream)}
+.panel .vis img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 38%;transform:scale(1.04);animation:drift 22s ease-in-out infinite alternate}
+@keyframes drift{to{transform:scale(1.14) translate(-1.5%,1%)}}
+.panel .vis::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(31,21,16,.55),rgba(31,21,16,.08) 45%,rgba(31,21,16,.65));z-index:1}
+.panel h2{position:absolute;z-index:2;top:clamp(20px,4vw,52px);left:clamp(20px,3vw,44px);right:20px;font-size:clamp(2.8rem,8vw,7.4rem);text-transform:uppercase;letter-spacing:-.03em;line-height:.88}
+.panel h2 em{text-transform:none;color:#f3c9a8}
+.glass{position:absolute;z-index:2;left:clamp(14px,2vw,28px);right:clamp(14px,2vw,28px);bottom:clamp(14px,2vw,28px);display:grid;grid-template-columns:repeat(3,1fr);border-radius:22px;background:rgba(243,234,223,.14);-webkit-backdrop-filter:blur(22px) saturate(1.2);backdrop-filter:blur(22px) saturate(1.2);box-shadow:inset 0 0 0 1px rgba(255,255,255,.28),inset 0 1px 0 rgba(255,255,255,.4)}
+.glass div{padding:22px 24px}
+.glass div+div{border-left:1px solid rgba(255,255,255,.22)}
+.glass b{display:block;font-weight:600;font-size:.95rem;margin-bottom:4px}
+.glass span{font-size:.86rem;opacity:.86;line-height:1.45;display:block}
+@media(max-width:900px){
+  .panel{grid-template-columns:1fr;min-height:0}
+  .panel .side{padding:28px}
+  .panel .vis{min-height:640px}
+  .glass{grid-template-columns:1fr}
+  .glass div+div{border-left:0;border-top:1px solid rgba(255,255,255,.22)}
+  .glass div{padding:16px 20px}
+}
+
+/* packages */
+.packages{background:var(--cream)}
+.packages .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr);gap:clamp(36px,7vw,120px);align-items:start}
+.packages h2{margin-bottom:clamp(30px,4vw,56px)}
+.rates li{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:18px;padding:22px 0;border-top:1px solid var(--line);transition:padding .4s var(--ease),background .3s;position:relative}
+.rates li:last-child{border-bottom:1px solid var(--line)}
+.rates li:hover{padding-inline:18px;background:rgba(235,207,194,.45);border-radius:14px}
+.rates .dur{font-family:var(--display);font-size:clamp(1.8rem,4.4vw,3.6rem);letter-spacing:-.025em;text-transform:uppercase;line-height:1}
+.rates .dur small{font-family:var(--body);font-size:.72rem;letter-spacing:.22em;font-weight:600;color:var(--caramel);margin-left:10px;vertical-align:middle}
+.rates .lead{border-bottom:1px dotted rgba(43,29,22,.4);transform:translateY(-6px);min-width:24px}
+.rates .amt{font-family:var(--display);font-size:clamp(1.8rem,4.4vw,3.6rem);letter-spacing:-.02em;font-feature-settings:"lnum","tnum";line-height:1}
+.rates .per{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--muted);display:block;text-align:right;margin-top:6px}
+.why{padding:clamp(26px,3vw,40px);border-radius:28px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);margin-top:8px}
+.why h3{font-family:var(--display);font-weight:500;font-style:italic;font-size:1.7rem;margin-bottom:18px;letter-spacing:-.01em}
+.why li{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-top:1px solid var(--line);font-size:.98rem}
+.why li svg{width:18px;height:18px;color:var(--caramel);flex:none;margin-top:4px}
+.why .note{margin-top:20px;font-size:.84rem;color:var(--muted);line-height:1.5}
+@media(max-width:900px){.packages .wrap{grid-template-columns:1fr}.rates li{gap:12px}}
+
+/* quote band */
+.band{min-height:min(92vh,820px);display:grid;place-items:center;text-align:center;overflow:hidden;padding:clamp(80px,10vw,150px) var(--gutter)}
+.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%;animation:drift 26s ease-in-out infinite alternate;filter:saturate(.9)}
+.band::before{content:"";position:absolute;inset:0;background:radial-gradient(70% 70% at 50% 50%,rgba(31,21,16,.55),rgba(31,21,16,.86));z-index:1}
+.band .in{position:relative;z-index:2;max-width:1100px}
+.band .d{font-size:clamp(3.4rem,11vw,10.5rem);color:var(--cream);line-height:.9;margin-bottom:28px}
+.band .d em{display:block;color:#f3c9a8}
+.band p{font-size:1.1rem;max-width:44ch;margin-inline:auto;color:rgba(243,234,223,.82)}
+
+/* audiences */
+.aud{background:var(--paper)}
+.aud .grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(14px,2vw,28px);align-items:stretch}
+.aud article{padding:clamp(30px,4vw,60px);border-radius:32px;display:flex;flex-direction:column;gap:20px;justify-content:space-between;min-height:420px}
+.aud .p1{background:var(--blush);border-radius:32px 32px 120px 32px}
+.aud .p2{background:var(--sage);color:var(--espresso);border-radius:32px 120px 32px 32px;margin-top:clamp(0px,6vw,90px)}
+.aud h3{font-family:var(--display);font-weight:400;font-size:clamp(2.1rem,4vw,3.6rem);letter-spacing:-.025em;line-height:1;margin-bottom:18px;text-wrap:balance}
+.aud h3 em{font-style:italic}
+.aud article p{max-width:44ch;color:#4a382d}
+.aud .p2 p{color:#2d3022}
+.aud .eyebrow{color:inherit;opacity:.8}
+@media(max-width:900px){.aud .grid{grid-template-columns:1fr}.aud .p2{margin-top:0}.aud article{min-height:0;gap:36px}}
+
+/* contact */
+.contact{background:var(--espresso)}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:clamp(36px,7vw,110px);align-items:start}
+.contact h2{font-size:clamp(3rem,8vw,7.4rem);text-transform:uppercase;letter-spacing:-.03em;margin-bottom:28px;line-height:.9}
+.contact h2 em{text-transform:none}
+.reach{margin-top:clamp(30px,4vw,56px)}
+.reach a{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;border-top:1px solid var(--line-lt);text-decoration:none;font-size:clamp(1rem,2vw,1.35rem);overflow-wrap:anywhere;transition:padding .4s var(--ease),color .3s}
+.reach a:last-child{border-bottom:1px solid var(--line-lt)}
+.reach a span{display:block}
+.reach small{display:block;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--caramel-lt);font-weight:600;margin-bottom:3px}
+.reach a svg{width:22px;height:22px;flex:none;transition:transform .4s var(--ease)}
+.reach a:hover{padding-left:14px;color:var(--caramel-lt)}
+.reach a:hover svg{transform:rotate(45deg)}
+form{background:var(--cream);color:var(--ink);padding:clamp(26px,3.4vw,44px);border-radius:32px;display:grid;gap:16px;box-shadow:0 60px 80px -50px #000}
+form h3{font-family:var(--display);font-weight:500;font-size:1.9rem;letter-spacing:-.015em;line-height:1.1}
+form .sub{font-size:.92rem;color:var(--muted);margin-top:-8px}
+.field{display:grid;gap:6px}
+.field label{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+input,select,textarea{width:100%;padding:14px 16px;border-radius:14px;border:0;font:inherit;font-size:.98rem;background:var(--paper);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line);transition:box-shadow .25s,background .25s}
+input::placeholder{color:#9b8a7d}
+input:focus,select:focus,textarea:focus{outline:none;box-shadow:inset 0 0 0 2px var(--caramel);background:#fff}
+input[aria-invalid="true"]{box-shadow:inset 0 0 0 2px #b3402a}
+.err{font-size:.82rem;color:#a63a25;min-height:0;display:none}
+.err.show{display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:520px){.two{grid-template-columns:1fr}}
+select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'><path d='M1 1l6 6 6-6' fill='none' stroke='%232b1d16' stroke-width='1.6'/></svg>");background-repeat:no-repeat;background-position:right 16px center;padding-right:40px}
+textarea{resize:vertical;font-size:.88rem;line-height:1.5;color:var(--muted)}
+.acts{display:grid;gap:10px;margin-top:4px}
+.acts .btn{justify-content:space-between;width:100%}
+.btn.ghost{--bg:transparent;--fg:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.ghost .ar{background:var(--espresso);color:var(--cream)}
+.btn.ghost:hover{--bg:rgba(43,29,22,.06)}
+.hint{font-size:.82rem;color:var(--muted);line-height:1.5}
+@media(max-width:900px){.contact .wrap{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:var(--espresso-2);color:rgba(243,234,223,.7);padding:clamp(56px,7vw,96px) 0 calc(40px + env(safe-area-inset-bottom,0px));font-size:.88rem}
+footer .row{display:flex;justify-content:space-between;align-items:end;gap:40px;flex-wrap:wrap;padding-bottom:36px;border-bottom:1px solid var(--line-lt)}
+footer img{width:min(300px,64vw);height:auto;filter:invert(1);mix-blend-mode:screen;opacity:.94}
+footer .links2{display:flex;gap:22px;flex-wrap:wrap}
+footer .links2 a{text-decoration:none;color:var(--cream);transition:color .2s}
+footer .links2 a:hover{color:var(--caramel-lt)}
+footer .fine{padding-top:26px;max-width:70ch;line-height:1.6}
+footer .fine p+p{margin-top:8px;opacity:.75}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--d,0) * 90ms)}
+.js .rv.in{opacity:1;transform:none}
+.js .arch.rv{transform:translateY(40px) scale(.97)}
+.js .arch.rv.in{transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+  .js .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <nav class="bar" aria-label="Primary">
+    <a class="mark" href="#top" aria-label="The Little Club, home">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg>The Little Club
+    </a>
+    <div class="links" id="links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#safety">Safety</a>
+      <a href="#packages">Packages</a>
+      <a class="btn sm" href="#contact">Book <span class="ar"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+    </div>
+    <button class="menu" id="menu" aria-expanded="false" aria-controls="links" aria-label="Menu"><i></i></button>
+  </nav>
+</header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-heart" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21C5.5 16.2 2.5 12.4 2.5 8.6 2.5 5.7 4.7 3.5 7.5 3.5c1.9 0 3.5 1 4.5 2.6 1-1.6 2.6-2.6 4.5-2.6 2.8 0 5 2.2 5 5.1 0 3.8-3 7.6-9.5 12.4z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" d="M6 18L18 6M8 6h10v10"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" d="M4 12.5l5 5L20 6.5"/></symbol>
+</svg>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow rv">Kids concierge &amp; childcare · Raipur</p>
+      <h1 class="d rv" style="--d:1">Enjoy your time.<span class="l2">We’ll mind the <em>little ones.</em></span></h1>
+      <p class="lede rv" style="--d:2">TLC lets parents enjoy cafés, restaurants, lounges and events while children get attentive, age-appropriate supervision and play, right nearby.</p>
+      <div class="cta rv" style="--d:3">
+        <a class="btn" href="#contact" data-type="Parent booking">Book childcare <span class="ar"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        <a class="link" href="#venues" data-type="Venue partnership">Partner with us <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <ul class="facts rv" style="--d:4">
+        <li><b>Ages 2–8</b>Age-appropriate play</li>
+        <li><b>Booking-based</b>Date, venue, duration</li>
+        <li><b>Verified staff</b>Authorised handover</li>
+      </ul>
+    </div>
+
+    <div class="stack">
+      <div class="arch rv" style="--d:2">
+        <video muted loop playsinline preload="auto" autoplay data-play poster="assets/blue-plush.jpg" aria-label="A TLC caregiver holding a toddler who is hugging a blue soft toy">
+          <source src="assets/blue-plush.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="mini rv" id="mini" style="--d:4">
+        <video muted loop playsinline preload="metadata" data-play poster="assets/colouring.jpg" aria-label="A caregiver colouring with a toddler at an outdoor evening venue">
+          <source src="assets/colouring.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
+          <text><textPath href="#circ" textLength="470" lengthAdjust="spacing">Happy kids · Happier parents · Happy kids · Happier parents ·</textPath></text></svg>
+        <svg class="h" viewBox="0 0 24 24" style="animation:none"><use href="#i-heart"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Happy kids <svg viewBox="0 0 24 24"><use href="#i-heart"/></svg> Happier parents <svg viewBox="0 0 24 24"><use href="#i-heart"/></svg> You enjoy. We care. <svg viewBox="0 0 24 24"><use href="#i-heart"/></svg> Safe hands, brighter days <svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></span>
+    <span>Happy kids <svg viewBox="0 0 24 24"><use href="#i-heart"/></svg> Happier parents <svg viewBox="0 0 24 24"><use href="#i-heart"/></svg> You enjoy. We care. <svg viewBox="0 0 24 24"><use href="#i-heart"/></svg> Safe hands, brighter days <svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about pad" id="about">
+  <div class="wrap">
+    <figure class="fig">
+      <div class="arch rv"><img src="assets/blue-plush-b.jpg" alt="A TLC caregiver in a beige uniform and white gloves carries a toddler in a checked shirt" loading="lazy"></div>
+      <figcaption>Thoughtful care.</figcaption>
+    </figure>
+    <div>
+      <p class="eyebrow rv">Who we are</p>
+      <h2 class="d h2 rv" style="--d:1">A professional, <em>booking<span class="hy">-</span>based</em> kids concierge.</h2>
+      <p class="lede rv" style="--d:2">The Little Club is built for parents who want to enjoy a meal, a meeting or an occasion, knowing their children are safe, engaged and happy nearby.</p>
+      <ul class="pillars">
+        <li class="rv"><span class="n">01</span><h3>Kids Concierge</h3><p>Supervision, engagement and age-appropriate activities while parents enjoy their time.</p></li>
+        <li class="rv" style="--d:1"><span class="n">02</span><h3>Booking<span class="hy">-</span>based care</h3><p>Request childcare for a defined date, venue and service duration.</p></li>
+        <li class="rv" style="--d:2"><span class="n">03</span><h3>Venue partnerships</h3><p>We work with selected cafés, restaurants, hotels and event venues.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services pad" id="services">
+  <div class="wrap">
+    <div class="sticky">
+      <p class="eyebrow rv">Our services</p>
+      <h2 class="d h2 rv" style="--d:1">Care that fits <em>the occasion.</em></h2>
+      <ul class="occasions rv" style="--d:2" aria-label="Occasions we cover">
+        <li>Dining out</li><li>Kitty parties</li><li>Meetings</li><li>Weddings &amp; functions</li><li>At your home</li><li>Anywhere you go</li>
+      </ul>
+    </div>
+    <ol class="svc">
+      <li class="rv"><span class="n">01</span><div><h3>Kids Concierge</h3><p>Supervised care and child engagement during the parent’s visit.</p></div></li>
+      <li class="rv"><span class="n">02</span><div><h3>Booking<span class="hy">-</span>based childcare</h3><p>Scheduled care for a specific time period and approved venue.</p></div></li>
+      <li class="rv"><span class="n">03</span><div><h3>Café &amp; restaurant childcare</h3><p>TLC staff operate within a designated area at partner venues.</p></div></li>
+      <li class="rv"><span class="n">04</span><div><h3>Event childcare</h3><p>Temporary childcare support for suitable private or social events.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- MOMENTS -->
+<section class="moments dark pad" id="moments">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="d rv">Little <em>moments,</em><br>looked after.</h2>
+      <p class="lede rv" style="--d:1">Real afternoons and evenings at partner venues: colouring, cuddles, soft toys and calm, gloved hands.</p>
+    </div>
+    <div class="rail">
+      <figure class="rv"><div class="arch"><video muted loop playsinline preload="none" data-play poster="assets/cafe-care.jpg" aria-label="A caregiver in gloves feeds a baby at a café table"><source src="assets/cafe-care.mp4" type="video/mp4"></video></div><figcaption><b>i.</b>A gentle start at the table</figcaption></figure>
+      <figure class="rv" style="--d:1"><div class="arch"><video muted loop playsinline preload="none" data-play poster="assets/colouring-b.jpg" aria-label="A caregiver and toddler colouring a bird picture book outdoors"><source src="assets/colouring.mp4" type="video/mp4"></video></div><figcaption><b>ii.</b>Colouring under the evening lights</figcaption></figure>
+      <figure class="rv" style="--d:2"><div class="arch"><video muted loop playsinline preload="none" data-play poster="assets/garden-carry.jpg" aria-label="A caregiver carries a smiling toddler in a garden courtyard"><source src="assets/garden-carry.mp4" type="video/mp4"></video></div><figcaption><b>iii.</b>Held, comforted, never far away</figcaption></figure>
+      <figure class="rv" style="--d:3"><div class="arch"><video muted loop playsinline preload="none" data-play poster="assets/blue-plush.jpg" aria-label="A caregiver holds a baby with a blue soft toy"><source src="assets/blue-plush.mp4" type="video/mp4"></video></div><figcaption><b>iv.</b>Soft toys, calm hands</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="process pad" id="how">
+  <div class="wrap">
+    <div class="sticky">
+      <p class="eyebrow rv">How TLC works</p>
+      <h2 class="d h2 rv" style="--d:1">Simple, clear <em>and safe.</em></h2>
+      <div class="pilot rv" style="--d:2"><b>30-Day Pilot Program</b><p>We’re testing the service with selected partner venues and families, gathering real feedback to build a reliable system before wider expansion.</p></div>
+    </div>
+    <ol class="steps">
+      <li class="rv"><span class="n">1</span><div><h3>Parent books</h3><p>Date, venue, child details and service duration are shared.</p></div></li>
+      <li class="rv"><span class="n">2</span><div><h3>TLC confirms</h3><p>Availability, staff assignment, service terms and applicable fee are confirmed.</p></div></li>
+      <li class="rv"><span class="n">3</span><div><h3>Child check<span class="hy">-</span>in</h3><p>Parent completes handover and check-in with authorised TLC staff.</p></div></li>
+      <li class="rv"><span class="n">4</span><div><h3>Supervised care</h3><p>TLC staff provide the agreed service within the designated area.</p></div></li>
+      <li class="rv"><span class="n">5</span><div><h3>Safe handover</h3><p>Child is released only to the parent or authorised pick-up person.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- SAFETY -->
+<section class="safety" id="safety">
+  <div class="panel rv">
+    <div class="side">
+      <p class="tag">Our approach<br>to safety</p>
+      <p>Pilot operations are built around verified, authorised staff, clear parent consent, emergency contacts, defined start and end times, and venue-specific rules. Care is provided only within the agreed scope and designated area.</p>
+      <span class="yr">TLC · RAIPUR</span>
+    </div>
+    <div class="vis">
+      <img src="assets/cafe-care-b.jpg" alt="A TLC caregiver in uniform and gloves helps a baby at a café table" loading="lazy">
+      <h2 class="d">Safe hands,<br><em>brighter days.</em></h2>
+      <div class="glass">
+        <div><b>Verified staff</b><span>Authorised TLC caregivers only, in uniform.</span></div>
+        <div><b>Consent &amp; handover</b><span>Emergency contacts, check-in and controlled release.</span></div>
+        <div><b>Defined area</b><span>Fixed start, end time and a designated space.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="packages pad" id="packages" style="padding-top:clamp(40px,6vw,80px)">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow rv">Pilot packages</p>
+      <h2 class="d h2 rv" style="--d:1">Quality time for them. <em>More you time.</em></h2>
+      <ul class="rates">
+        <li class="rv"><span class="dur">60 min</span><span class="lead"></span><span><span class="amt">₹499</span><span class="per">per child</span></span></li>
+        <li class="rv"><span class="dur">90 min</span><span class="lead"></span><span><span class="amt">₹699</span><span class="per">per child</span></span></li>
+        <li class="rv"><span class="dur">120 min</span><span class="lead"></span><span><span class="amt">₹899</span><span class="per">per child</span></span></li>
+        <li class="rv"><span class="dur">+30 min <small>ADD-ON</small></span><span class="lead"></span><span><span class="amt">₹250</span><span class="per">per child</span></span></li>
+      </ul>
+    </div>
+    <aside class="why rv" style="--d:2">
+      <h3>Why parents choose TLC</h3>
+      <ul>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"/></svg>Trained and verified caregivers</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"/></svg>Safe, fun and nurturing environment</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"/></svg>Age-appropriate activities, ages 2–8</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"/></svg>Hygiene and child safety first</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"/></svg>Flexible, reliable service</li>
+      </ul>
+      <p class="note">Pilot rates. Availability, age eligibility and final fee are confirmed at booking.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- QUOTE BAND -->
+<section class="band dark" aria-label="You enjoy. We care.">
+  <img src="assets/garden-carry-b.jpg" alt="" loading="lazy">
+  <div class="in">
+    <h2 class="d rv">You enjoy.<em>We care.</em></h2>
+    <p class="rv" style="--d:1">So you can relax, dine and be present for yourself, too.</p>
+  </div>
+</section>
+
+<!-- AUDIENCES -->
+<section class="aud pad" id="venues">
+  <div class="wrap">
+    <div class="grid">
+      <article class="p1 rv">
+        <div>
+          <p class="eyebrow">For parents</p>
+          <h3>Peace of mind, <em>booked.</em></h3>
+          <p>Share your child’s essential information and emergency contacts, agree to the booking terms, and complete check-in, check-out and consent. Service duration is defined by the agreed start and end time.</p>
+        </div>
+        <a class="btn" href="#contact" data-type="Parent booking">Book childcare <span class="ar"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      </article>
+      <article class="p2 rv" style="--d:1">
+        <div>
+          <p class="eyebrow">For venue partners</p>
+          <h3>Add a family-friendly <em>edge.</em></h3>
+          <p>Provide an agreed, suitable area and work with TLC on access, hours, venue rules and safety. Partnership terms, including any fees, are agreed separately.</p>
+        </div>
+        <a class="btn" href="#contact" data-type="Venue partnership">Apply for the pilot <span class="ar"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact dark pad" id="contact">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow rv">Get in touch</p>
+      <h2 class="d rv" style="--d:1">Book or <em>partner</em> with TLC</h2>
+      <p class="lede rv" style="--d:2">Tell us the details and we’ll confirm availability, staff and fee.</p>
+      <div class="reach rv" style="--d:3">
+        <a href="https://wa.me/919630173001" target="_blank" rel="noopener"><span><small>WhatsApp</small>+91 96301 73001</span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="mailto:tlcthelittleclub@gmail.com"><span><small>Email</small>tlcthelittleclub@gmail.com</span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="https://instagram.com/thelittleclub.tlc" target="_blank" rel="noopener"><span><small>Instagram</small>@thelittleclub.tlc</span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+
+    <form id="f" class="rv" style="--d:2" novalidate>
+      <h3>Send us the details</h3>
+      <p class="sub">Fill what you know. It opens a ready-written message to us.</p>
+      <div class="field"><label for="n">Your name</label><input id="n" name="name" placeholder="e.g. Ananya Sahu" autocomplete="name" required aria-describedby="nerr"><p class="err" id="nerr" role="alert">Please add your name so we know who to reply to.</p></div>
+      <div class="field"><label for="t">I’m a</label><select id="t"><option>Parent booking</option><option>Venue partnership</option></select></div>
+      <div class="two">
+        <div class="field"><label for="d">Date &amp; time</label><input id="d" placeholder="Sat, 7–9 pm"></div>
+        <div class="field"><label for="k">Child’s age(s)</label><input id="k" placeholder="e.g. 3 and 6"></div>
+      </div>
+      <div class="field"><label for="v">Venue</label><input id="v" placeholder="Café, restaurant or event venue"></div>
+      <div class="field"><label for="pv">Message preview</label><textarea id="pv" readonly rows="5"></textarea></div>
+      <div class="acts">
+        <a class="btn alt" id="wa" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=919630173001">Continue on WhatsApp <span class="ar"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        <a class="btn ghost" id="em" href="mailto:tlcthelittleclub@gmail.com">Or send by email <span class="ar"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        <a class="btn ghost" id="cp" href="#">Copy message <span class="ar"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      </div>
+      <p class="hint" id="cpmsg" aria-live="polite">If the chat opens blank, tap Copy message and paste it into the chat with us.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <img src="assets/tlc-logo.png" alt="TLC, The Little Club. Happy kids, happier parents." width="300" height="164" loading="lazy">
+      <div class="links2"><a href="#about">About</a><a href="#services">Services</a><a href="#packages">Packages</a><a href="https://instagram.com/thelittleclub.tlc" target="_blank" rel="noopener">Instagram</a><a href="#top">Back to top ↑</a></div>
+    </div>
+    <div class="fine">
+      <p>TLC is a developing pilot service. Service availability, age eligibility, pricing and venue arrangements are confirmed at booking.</p>
+      <p>© The Little Club (TLC) · Raipur</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* reveal on scroll */
+  var rv=[].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window){
+    var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}})},{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+    rv.forEach(function(el){ro.observe(el)});
+  }else{rv.forEach(function(el){el.classList.add('in')})}
+
+  /* play videos only while visible */
+  var vids=[].slice.call(document.querySelectorAll('video[data-play]'));
+  if(!rm&&'IntersectionObserver' in window){
+    var vo=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){})}else{v.pause()}})},{threshold:.25});
+    vids.forEach(function(v){vo.observe(v)});
+  }else{vids.forEach(function(v){v.removeAttribute('autoplay')})}
+
+  /* nav: mobile menu + current section */
+  var menu=document.getElementById('menu'),links=document.getElementById('links');
+  menu.addEventListener('click',function(){var o=links.classList.toggle('open');menu.setAttribute('aria-expanded',o)});
+  links.addEventListener('click',function(e){if(e.target.closest('a')){links.classList.remove('open');menu.setAttribute('aria-expanded','false')}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){links.classList.remove('open');menu.setAttribute('aria-expanded','false')}});
+  var navA=[].slice.call(links.querySelectorAll('a[href^="#"]:not(.btn)'));
+  if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){navA.forEach(function(a){a.removeAttribute('aria-current');if(a.getAttribute('href')==='#'+e.target.id)a.setAttribute('aria-current','true')})}})},{rootMargin:'-45% 0px -50% 0px'});
+    navA.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s)so.observe(s)});
+  }
+
+  /* gentle hero parallax */
+  var mini=document.getElementById('mini'),tk=false;
+  if(!rm&&mini){window.addEventListener('scroll',function(){if(tk)return;tk=true;requestAnimationFrame(function(){var y=Math.min(window.scrollY,900);mini.style.transform='translate3d(0,'+(y*-.08)+'px,0)';tk=false})},{passive:true})}
+
+  /* CTA links preselect the enquiry type */
+  [].slice.call(document.querySelectorAll('a[data-type]')).forEach(function(a){a.addEventListener('click',function(){var s=document.getElementById('t');s.value=a.getAttribute('data-type');upd()})});
+
+  /* enquiry form */
+  var $=function(i){return document.getElementById(i)};
+  function upd(){var g=function(i){return $(i).value||'-'};
+    var m='Hi TLC! '+g('t')+'\nName: '+g('n')+'\nDate/time: '+g('d')+'\nVenue: '+g('v')+'\nChild age(s): '+g('k');
+    $('wa').href='https://api.whatsapp.com/send?phone=919630173001&text='+encodeURIComponent(m);$('pv').value=m;
+    $('em').href='mailto:tlcthelittleclub@gmail.com?subject='+encodeURIComponent('TLC enquiry – '+g('t'))+'&body='+encodeURIComponent(m);}
+  $('f').addEventListener('input',upd);$('f').addEventListener('change',upd);upd();
+  function needName(e){var n=$('n');if(n.value.trim())return true;e.preventDefault();n.setAttribute('aria-invalid','true');$('nerr').classList.add('show');n.focus();return false}
+  $('n').addEventListener('input',function(){this.removeAttribute('aria-invalid');$('nerr').classList.remove('show')});
+  $('wa').addEventListener('click',needName);$('em').addEventListener('click',needName);
+  $('cp').addEventListener('click',function(e){e.preventDefault();var t=$('pv'),ok=false;t.select();t.setSelectionRange(0,9999);
+    try{ok=document.execCommand('copy')}catch(x){}
+    if(!ok&&navigator.clipboard){navigator.clipboard.writeText(t.value);ok=true}
+    $('cpmsg').textContent=ok?'Copied. Paste it into WhatsApp.':'Select the text above and copy it.';});
+})();
+</script>
+</body>
+</html>

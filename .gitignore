@@ -1,0 +1,18 @@
+# Raw originals (large iCloud media, PDFs) — not needed on the web
+*.mov
+*.MOV
+*.mp4
+*.MP4
+*.HEIC
+*.PDF
+*.pdf
+3B9947F8-*.PNG
+5675587A-*.PNG
+IMG_0693.jpg
+WhatsApp Image*.jpeg
+.DS_Store
+
+# Keep the compressed web assets and the optimized logo/images used by the site
+!assets/*.mp4
+!assets/*.jpg
+!assets/*.png
